@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Votre Panier{% endblock %}
+
+{% block body %}
+    <h1>Votre Panier</h1>
+
+    {% if items | length > 0 %}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Prix unitaire</th>
+                <th>Quantité</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in items %}
+                <tr>
+                    <td>{{ item.product.name }}</td>
+                    <td>{{ item.product.price | amountEuro }}</td>
+                    <td>
+                        <a href="{{ path('cart_decrement', {id: item.product.id}) }}"><i class="fas fa-minus mr-2"></i></a>
+                        {{ item.quantity }}
+                        <a href="{{ path('cart_increment', {id: item.product.id}) }}"><i
+                                    class="fas fa-plus ml-2"></i></a>
+                    </td>
+                    <td>{{ item.total | amountEuro }}</td>
+                    <td>
+                        <a href="{{ path('cart_delete', {id: item.product.id}) }}">
+                            <i class="fas fa-trash text-danger"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total :</strong></td>
+                <td colspan="2"><strong>{{ total | amountEuro }}</strong></td>
+            </tr>
+            </tfoot>
+        </table>
+        <hr>
+        {% if app.user %}
+            <h2>Confirmez votre commande en remplissant ce formulaire</h2>
+            {{ form_start(confirmationForm, {action: path('purchase_confirm')}) }}
+            {{ form_widget(confirmationForm) }}
+            <button class="btn btn-success" type="submit">Je confirme !</button>
+            {{ form_end(confirmationForm) }}
+        {% else %}
+            <h2>Vous devez être connecté pour continuer votre commande</h2>
+            <a href="{{ path('security_login') }}" class="btn btn-success">Connexion</a> ou <a href="#">Créer un
+            compte</a>
+        {% endif %}
+    {% else %}
+        <h2 class="text-center">Votre panier est vide !</h2>
+    {% endif %}
+{% endblock %}

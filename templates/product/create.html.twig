@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Création d'un produit
+{% endblock %}
+
+{% block body %}
+    <h1>Nouveau Produuit</h1>
+
+    {{ form_start(form) }}
+
+    {{ form_errors(form) }}
+    <div class="row">
+        <div class="col">
+            {{ form_row(form.name) }}
+            {{ form_row(form.price) }}
+        </div>
+        <div class="col">
+            {{ form_row(form.mainPicture) }}
+            {{ form_row(form.shortDescription) }}
+            {{ form_row(form.category) }}
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit"><i class="fas fa-save mr-2 mt-1"></i>Créer le produit</button>
+
+    {{ form_end(form) }}
+{% endblock %}
+
