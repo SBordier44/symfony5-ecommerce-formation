@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e81e27c3ed33c6fa35644f480e5424f1",
+    "content-hash": "67696e775d829261a8c65990ed2d6e70",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1626,6 +1626,58 @@
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
+            "name": "fakerphp/faker",
+            "version": "v1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FakerPHP/Faker.git",
+                "reference": "ab3f5364d01f2c2c16113442fb987d26e4004913"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/ab3f5364d01f2c2c16113442fb987d26e4004913",
+                "reference": "ab3f5364d01f2c2c16113442fb987d26e4004913",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "fzaninotto/faker": "*"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "ext-intl": "*",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.8 || ^9.4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "support": {
+                "issues": "https://github.com/FakerPHP/Faker/issues",
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.13.0"
+            },
+            "time": "2020-12-18T16:50:48+00:00"
+        },
+        {
             "name": "friendsofphp/proxy-manager-lts",
             "version": "v1.0.3",
             "source": {
@@ -1909,6 +1961,104 @@
                 }
             ],
             "time": "2020-09-14T14:23:00+00:00"
+        },
+        {
+            "name": "liorchamla/faker-prices",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liorchamla/faker-prices.git",
+                "reference": "01f44c6aad653bf72f90c1345d48a798ec3f9d19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liorchamla/faker-prices/zipball/01f44c6aad653bf72f90c1345d48a798ec3f9d19",
+                "reference": "01f44c6aad653bf72f90c1345d48a798ec3f9d19",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.13",
+                "pestphp/pest": "^0.3.19",
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Liior\\Faker\\": "src/Faker"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lior Chamla",
+                    "email": "contact@web-develop.me"
+                }
+            ],
+            "description": "Provides typical and credible prices for Faker (fzaninotto/faker or fakerphp/faker) library",
+            "keywords": [
+                "faker",
+                "fixtures",
+                "prices"
+            ],
+            "support": {
+                "issues": "https://github.com/liorchamla/faker-prices/issues",
+                "source": "https://github.com/liorchamla/faker-prices/tree/2.0.0"
+            },
+            "time": "2020-12-29T08:40:08+00:00"
+        },
+        {
+            "name": "mbezhanov/faker-provider-collection",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mbezhanov/faker-provider-collection.git",
+                "reference": "0b0cfe764da6ce94fb4681a43be2b7aba1a8d1ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mbezhanov/faker-provider-collection/zipball/0b0cfe764da6ce94fb4681a43be2b7aba1a8d1ec",
+                "reference": "0b0cfe764da6ce94fb4681a43be2b7aba1a8d1ec",
+                "shasum": ""
+            },
+            "require": {
+                "fakerphp/faker": "^1.13",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "php-mock/php-mock": "^2.3",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bezhanov\\Faker\\": "src/Faker"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marin Bezhanov",
+                    "email": "marin.bezhanov@gmail.com",
+                    "homepage": "http://marinbezhanov.com"
+                }
+            ],
+            "description": "A collection of custom providers for the Faker library",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "support": {
+                "issues": "https://github.com/mbezhanov/faker-provider-collection/issues",
+                "source": "https://github.com/mbezhanov/faker-provider-collection/tree/2.0.0"
+            },
+            "time": "2020-12-28T13:53:54+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7715,159 +7865,53 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.9.1"
             },
             "time": "2020-07-08T17:02:28+00:00"
+        },
+        {
+            "name": "woodsandwalker/faker-picture",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/woodsandwalker/Faker-Picture.git",
+                "reference": "ae9d4afae4ac27ffccfcfe2fda11b84f3ddb56dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/woodsandwalker/Faker-Picture/zipball/ae9d4afae4ac27ffccfcfe2fda11b84f3ddb56dd",
+                "reference": "ae9d4afae4ac27ffccfcfe2fda11b84f3ddb56dd",
+                "shasum": ""
+            },
+            "require": {
+                "fakerphp/faker": "^1.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WW\\Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Walker",
+                    "homepage": "https://woodsandwalker.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A provider for FakerPHP to generate images from https://picsum.photos.",
+            "keywords": [
+                "faker"
+            ],
+            "support": {
+                "issues": "https://github.com/woodsandwalker/Faker-Picture/issues",
+                "source": "https://github.com/woodsandwalker/Faker-Picture/tree/v1.0.0"
+            },
+            "time": "2020-12-03T15:58:48+00:00"
         }
     ],
     "packages-dev": [
-        {
-            "name": "fakerphp/faker",
-            "version": "v1.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "ab3f5364d01f2c2c16113442fb987d26e4004913"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/ab3f5364d01f2c2c16113442fb987d26e4004913",
-                "reference": "ab3f5364d01f2c2c16113442fb987d26e4004913",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "conflict": {
-                "fzaninotto/faker": "*"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
-                "ext-intl": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.8 || ^9.4.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "support": {
-                "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.13.0"
-            },
-            "time": "2020-12-18T16:50:48+00:00"
-        },
-        {
-            "name": "liorchamla/faker-prices",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/liorchamla/faker-prices.git",
-                "reference": "01f44c6aad653bf72f90c1345d48a798ec3f9d19"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liorchamla/faker-prices/zipball/01f44c6aad653bf72f90c1345d48a798ec3f9d19",
-                "reference": "01f44c6aad653bf72f90c1345d48a798ec3f9d19",
-                "shasum": ""
-            },
-            "require-dev": {
-                "fakerphp/faker": "^1.13",
-                "pestphp/pest": "^0.3.19",
-                "phpunit/phpunit": "^9"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Liior\\Faker\\": "src/Faker"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lior Chamla",
-                    "email": "contact@web-develop.me"
-                }
-            ],
-            "description": "Provides typical and credible prices for Faker (fzaninotto/faker or fakerphp/faker) library",
-            "keywords": [
-                "faker",
-                "fixtures",
-                "prices"
-            ],
-            "support": {
-                "issues": "https://github.com/liorchamla/faker-prices/issues",
-                "source": "https://github.com/liorchamla/faker-prices/tree/2.0.0"
-            },
-            "time": "2020-12-29T08:40:08+00:00"
-        },
-        {
-            "name": "mbezhanov/faker-provider-collection",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mbezhanov/faker-provider-collection.git",
-                "reference": "0b0cfe764da6ce94fb4681a43be2b7aba1a8d1ec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mbezhanov/faker-provider-collection/zipball/0b0cfe764da6ce94fb4681a43be2b7aba1a8d1ec",
-                "reference": "0b0cfe764da6ce94fb4681a43be2b7aba1a8d1ec",
-                "shasum": ""
-            },
-            "require": {
-                "fakerphp/faker": "^1.13",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "php-mock/php-mock": "^2.3",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Bezhanov\\Faker\\": "src/Faker"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marin Bezhanov",
-                    "email": "marin.bezhanov@gmail.com",
-                    "homepage": "http://marinbezhanov.com"
-                }
-            ],
-            "description": "A collection of custom providers for the Faker library",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "support": {
-                "issues": "https://github.com/mbezhanov/faker-provider-collection/issues",
-                "source": "https://github.com/mbezhanov/faker-provider-collection/tree/2.0.0"
-            },
-            "time": "2020-12-28T13:53:54+00:00"
-        },
         {
             "name": "nikic/php-parser",
             "version": "v4.10.4",
@@ -8460,50 +8504,6 @@
                 }
             ],
             "time": "2020-12-08T17:03:37+00:00"
-        },
-        {
-            "name": "woodsandwalker/faker-picture",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/woodsandwalker/Faker-Picture.git",
-                "reference": "ae9d4afae4ac27ffccfcfe2fda11b84f3ddb56dd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/woodsandwalker/Faker-Picture/zipball/ae9d4afae4ac27ffccfcfe2fda11b84f3ddb56dd",
-                "reference": "ae9d4afae4ac27ffccfcfe2fda11b84f3ddb56dd",
-                "shasum": ""
-            },
-            "require": {
-                "fakerphp/faker": "^1.12"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WW\\Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "James Walker",
-                    "homepage": "https://woodsandwalker.co.uk",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A provider for FakerPHP to generate images from https://picsum.photos.",
-            "keywords": [
-                "faker"
-            ],
-            "support": {
-                "issues": "https://github.com/woodsandwalker/Faker-Picture/issues",
-                "source": "https://github.com/woodsandwalker/Faker-Picture/tree/v1.0.0"
-            },
-            "time": "2020-12-03T15:58:48+00:00"
         }
     ],
     "aliases": [],
